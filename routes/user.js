@@ -14,6 +14,12 @@ userRouter.post("/signin",(req, res) => {
     })
 })
 
+userRouter.post("/purchases",(req, res) => {
+    res.json({
+        message: "View User's purchased courses"
+    })
+})
+
 module.exports = {
     userRouter : userRouter
 }
